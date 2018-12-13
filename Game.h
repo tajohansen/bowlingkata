@@ -13,9 +13,12 @@ class Game {
     int currentRoll = 0;
     std::array<int, 21> rolls;
 public:
+    Game();
+
     void roll(int frame);
     int scoreGame();
     bool isSpare(int frameIndex);
+    bool isStrike(int frameIndex);
 
 };
 
